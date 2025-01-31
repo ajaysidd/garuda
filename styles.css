@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: blue;
+    background-image: no-repeat;
+}
+
+/* Transparent header */
+header {
+    position: fixed; /* Make the header stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: blue (0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 15px 0;
+    z-index: 1000; /* Ensure the header is above other content */
+    transition: background 0.3s ease; /* Add smooth transition for background change */
+}
+
+/* Adjust text color and hover effects for links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6600; /* Change color on hover */
+}
+
+/* Scroll effect: Change header opacity on scroll */
+header.scrolled {
+    background: rgba(0, 0, 0, 0.9); /* Darker background when user scrolls */
+}
+
+/* Spacing for the rest of the content so it doesn't overlap with the header */
+body {
+    padding-top: 80px; /* Make space for the fixed header */
+}
+
+/* Optional: Add a background image to demonstrate transparency */
+#hero {
+    background: url('https://source.unsplash.com/1600x900/?marketing') no-repeat center center/cover;
+    color: white;
+    padding: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('https://source.unsplash.com/1600x900/?marketing') no-repeat center center/cover;
+    color: white;
+    padding: 50px;
+}
+
+.cta-button {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.service {
+    background: #E5989B;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
